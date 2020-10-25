@@ -40,8 +40,6 @@ module top_level_sd(input clk_100mhz,
                      .rd(rd), .dout(dout), .byte_available(byte_available),
                      .wr(wr), .din(din), .ready_for_next_byte(ready_for_next_byte)); 
     
-    always_ff @(posedge clk_100mhz) begin
-        // your Verilog here :)  
-    end 
+    // your Verilog here :) 
     
 endmodule
