@@ -20,7 +20,7 @@ module top_level_sd(input clk_100mhz,
     
     // generate 25 mhz clock for sd_controller 
     logic clk_25mhz;
-    clk_wiz_0(.clk_in1(clk_100mhz), .clk_out1(clk_25mhz));
+    clk_wiz_0 clocks(.clk_in1(clk_100mhz), .clk_out1(clk_25mhz));
    
     // sd_controller inputs
     logic rd;                   // read enable
