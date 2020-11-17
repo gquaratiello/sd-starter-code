@@ -13,7 +13,7 @@ module top_level_sd(input clk_100mhz,
     );
     
     logic reset;            // assign to your system reset
-    assign btnr = reset;    // if yours isn't btnr
+    assign reset = btnr;    // if yours isn't btnr
     
     assign sd_dat[2:1] = 2'b11;
     assign sd_reset = 0;
